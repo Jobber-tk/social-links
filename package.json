@@ -1,6 +1,6 @@
 {
   "name": "social-links",
-  "version": "1.0.12",
+  "version": "1.0.16",
   "description": "Validate & sanitize social links",
   "main": "lib/main.js",
   "types": "lib/main.d.ts",
@@ -50,7 +50,6 @@
     "facebook",
     "youtube",
     "twitch",
-    "discord",
     "instagram",
     "patreon",
     "github",
