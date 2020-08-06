@@ -142,7 +142,7 @@ export const PREDEFINED_PROFILES: Profile[] = [
         match: '(https?://)?mobile.twitter.com/@?({PROFILE_ID})/?', group: 2, type: TYPE_MOBILE,
         pattern: 'https://mobile.twitter.com/{PROFILE_ID}'
       },
-      { match: '({PROFILE_ID})', group: 1 },
+      { match: '@?({PROFILE_ID})', group: 1 },
     ]
   },
   { name: 'facebook',
@@ -185,15 +185,6 @@ export const PREDEFINED_PROFILES: Profile[] = [
       { match: '({PROFILE_ID})', group: 1 },
     ]
   },
-  // { name: 'discord',
-  //   matches: [
-  //     {
-  //       match: '(https?://)?(www.)?discord.com/channels/({PROFILE_ID})/?', group: 3, type: TYPE_DESKTOP,
-  //       pattern: 'https://discord.com/channels/{PROFILE_ID}'
-  //     },
-  //     { match: '({PROFILE_ID})', group: 1 },
-  //   ]
-  // },
   { name: 'instagram',
     matches: [
       {
@@ -231,14 +222,14 @@ export const PREDEFINED_PROFILES: Profile[] = [
         match: '(https?://)?(www.)?medium.com/@({PROFILE_ID})/?', group: 3, type: TYPE_DESKTOP,
         pattern: 'https://medium.com/@{PROFILE_ID}'
       },
-      { match: '({PROFILE_ID})', group: 1 },
+      { match: '@?({PROFILE_ID})', group: 1 },
     ]
   },
-  { name: 'dribbble',
+  { name: 'dribble',
     matches: [
       {
-        match: '(https?://)?(www.)?dribbble.com/({PROFILE_ID})/?', group: 3, type: TYPE_DESKTOP,
-        pattern: 'https://dribbble.com/{PROFILE_ID}'
+        match: '(https?://)?(www.)?dribble.com/({PROFILE_ID})/?', group: 3, type: TYPE_DESKTOP,
+        pattern: 'https://dribble.com/{PROFILE_ID}'
       },
       { match: '({PROFILE_ID})', group: 1 },
     ]
